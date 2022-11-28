@@ -110,9 +110,4 @@ function removeListEvents() {
   }
 }
 
-function clearForm() {
-  overlayElement.style.display = "none";
-  asideElement.style.display = "none";
-  errorElement.style.display = "none";
-  inputElement.value = "";
-}
+

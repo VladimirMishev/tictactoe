@@ -1,0 +1,60 @@
+@media screen and (max-width: 48rem) {
+  header {
+    padding: 0.5rem 0.5rem;
+    box-sizing: border-box;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  /* Main Section */
+  #mainSection ol {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+
+  #mainSection ol li {
+    margin: 0.5rem;
+  }
+
+  .playerBoxStyle h2 {
+    margin: 0.3rem;
+  }
+
+  .playerBoxStyle h3 {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  /* Aside element style */
+  main {
+    box-sizing: border-box;
+  }
+  aside {
+    width: 90%;
+    top: 12%;
+    left: 5%;
+    box-sizing: border-box;
+  }
+
+  /* Game Sectioni Style */
+
+  #gameSection {
+    box-sizing: border-box;
+  }
+  #gameSection article {
+    width: 90%;
+  }
+
+  #gameSection article h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}

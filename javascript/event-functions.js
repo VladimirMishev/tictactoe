@@ -20,18 +20,19 @@ function getPlayerName(event) {
     errorElement.style.display = "block";
   } else {
     errorElement.style.display = "none";
-  }
-  const getElementString = "player" + playerID + "-name";
-  const playerNameDisplay = document.getElementById(getElementString);
-  playerNameDisplay.textContent = enteredPlayerName;
-  players[playerID - 1].name = enteredPlayerName;
-  numberOfPlayers++;
 
-  if (numberOfPlayers === 2) {
-    startGame.disabled = false;
-  }
+    const getElementString = "player" + playerID + "-name";
+    const playerNameDisplay = document.getElementById(getElementString);
+    playerNameDisplay.textContent = enteredPlayerName;
+    players[playerID - 1].name = enteredPlayerName;
+    numberOfPlayers++;
 
-  clearForm();
+    if (numberOfPlayers === 2) {
+      startGame.disabled = false;
+    }
+
+    clearForm();
+  }
 }
 
 function openNewGame() {
@@ -42,7 +43,7 @@ function openNewGame() {
     for (let i = 0; i < 9; i++) {
       gameListTable[i].addEventListener("click", insetPlayerSimbol);
     }
-  } 
+  }
 
   activePlayerElement.textContent = players[0].name;
 }
