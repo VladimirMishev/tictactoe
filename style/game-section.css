@@ -1,0 +1,50 @@
+/* Game Sectioni Style */
+#gameSection article {
+    background-color: rgb(230, 161, 0);
+    width: 40rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    display: none;
+}
+
+#gameSection article h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+#gameTable {
+    display: none;
+}
+
+#gameSection p span {
+    color: rgb(230, 161, 0);
+    font-weight: bold;
+}
+
+#gameTable ol {
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3, 6rem);
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+}
+
+#gameTable ol li {
+    background-color: rgb(252, 214, 124);
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#gameTable ol li:hover {
+    background-color: rgb(230, 161, 0);
+}
+
+.selected {
+    background-color: rgb(230, 161, 0);
+}

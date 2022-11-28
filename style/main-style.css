@@ -1,0 +1,46 @@
+/*main styles*/
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(247, 232, 198);
+}
+
+ol {
+    list-style: none;
+}
+
+input {
+    font: inherit;
+}
+
+button {
+    background-color: rgb(230, 161, 0);
+    border: none;
+    padding: 0.5rem 1rem;
+    font: inherit;
+    border-radius: 0.3rem;
+    transition: background-color 0.5s ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(240, 197, 95);;
+}
+
+.btnSyle {
+    background-color: transparent;
+    border: 0.05rem solid rgb(230, 161, 0);
+    padding: 0.5rem 1rem;
+    font: inherit;
+    border-radius: 0.3rem;
+    color: rgb(230, 161, 0);
+    transition: border-color 0.5s ease-in;
+    cursor: pointer;
+}
+
+.btnSyle:hover {
+    background-color: transparent;
+    border-color: transparent;
+}

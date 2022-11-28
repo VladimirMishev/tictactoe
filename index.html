@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/main-style.css" />
+    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/style/main-section.css" />
+    <link rel="stylesheet" href="/style/game-section.css" />
+    <script src="/javascript/functions.js" defer></script>
+    <script src="/javascript/event-functions.js"></script>
+    <script src="/javascript/script.js" defer></script>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <header>
+      <h1>Play Tic, Tac, Toe</h1>
+      <p>Built with HTML, CSS and JavaScript and - of course - lots of love!</p>
+    </header>
+    <main>
+      <aside id="asideElement">
+        <form id="formElement">
+          <h2>Choose your name</h2>
+          <div>
+            <label for="playername">Player Name</label>
+            <input type="text" name="playername" id="playername" required />
+          </div>
+          <div>
+            <p id="errorMessage">* Please enter valid Player Name</p>
+            <button type="reset" class="btnSyle" id="btnCancel">Cancel</button>
+            <button type="submit" id="btnCofirm">Confirm</button>
+          </div>
+        </form>
+      </aside>
+      <section id="mainSection">
+        <ol>
+          <li class="playerBoxStyle">
+            <article id="player1">
+              <h2>Player 1</h2>
+              <h3 id="player1-name">Player Name</h3>
+              <p>X</p>
+              <button type="button" id="btnPlayer1" data-playerID="1">Edit</button>
+            </article>
+          </li>
+          <li class="playerBoxStyle">
+            <article id="player2">
+              <h2>Player 2</h2>
+              <h3 id="player2-name">Player Name</h3>
+              <p>O</p>
+              <button type="button" id="btnPlayer2" data-playerID="2">Edit</button>
+            </article>
+          </li>
+        </ol>
+        <button type="button" id="startGame" disabled>Start New Game</button>
+      </section>
+      <section id="gameSection">
+        <article>
+          <h2>You won, <span id="winPlayer">Player Name</span>!</h2>
+          <p>Click "Start New Game" above, to start a new game!</p>
+        </article>
+        <div id="gameTable">
+          <p>It's your turn <span id="activPlayer">Player Name</span>!</p>
+          <ol>
+            <li data-row="1" data-column="1"></li>
+            <li data-row="1" data-column="2"></li>
+            <li data-row="1" data-column="3"></li>
+
+            <li data-row="2" data-column="1"></li>
+            <li data-row="2" data-column="2"></li>
+            <li data-row="2" data-column="3"></li>
+
+            <li data-row="3" data-column="1"></li>
+            <li data-row="3" data-column="2"></li>
+            <li data-row="3" data-column="3"></li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
